@@ -1,0 +1,35 @@
+.banner{
+    position: relative;
+    background-image: url("../assets/img/imageBanner.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 1240px;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    z-index: 1;
+}
+
+.banner h1{
+    position: relative;
+    z-index: 2;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68.45px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
