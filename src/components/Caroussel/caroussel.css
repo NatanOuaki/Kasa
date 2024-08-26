@@ -1,0 +1,30 @@
+#caroussel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 470px;
+	position: relative;
+}
+.caroussel-img {
+	position: absolute;
+	width: 90%;
+	height: 415px;
+    border-radius: 25px;
+	z-index: -1;
+	object-fit: cover;
+	object-position: center;
+}
+/* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
+/* Gestion des fleches du carrousel */
+#caroussel .arrow {
+	position: absolute;
+    height: 80px;
+}
+#caroussel .arrow_left {
+	left: 120px;
+}
+#caroussel .arrow_right {
+	right: 120px;
+}

@@ -1,5 +1,5 @@
-import Banner from "../components/banner";
-import Gallery from "../components/gallery";
+import Banner from "../components/Banner/Banner";
+import Gallery from "../components/Gallery/Gallery";
 
 function Home() {
   return (

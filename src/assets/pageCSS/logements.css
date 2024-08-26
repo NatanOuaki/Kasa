@@ -1,0 +1,44 @@
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.logementTitle{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.logementLocation{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: left;
+}
+
+.host{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 1Opx;
+}
+
+.hostName{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    color: #FF6060;
+    margin-right: 10px;
+}
+
+
+.hostPic{
+    border-radius: 50%;
+    width: 100px;
+}

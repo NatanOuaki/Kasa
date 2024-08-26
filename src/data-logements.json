@@ -1,7 +1,4 @@
-import { Link } from 'react-router-dom';
-import './gallery.css';
-
-const data = [
+[
   {
     "id": "c67ab8a7",
     "title": "Appartement cosy",
@@ -620,21 +617,3 @@ const data = [
     ]
   }
 ]
-
-
-function Gallery({}){
-    return(
-        <div className="gallery">
-            {data.map((logement, index) =>(
-                <Link to={`/logement/${logement.id}`} key={index}>
-                    <div className="logementCard">
-                        <img src={logement.cover} alt=""/>
-                        <p className="cardTitle">{logement.title}</p>
-                    </div>
-                </Link>
-            ) )}
-        </div>
-    );
-};
-
-export default Gallery;
