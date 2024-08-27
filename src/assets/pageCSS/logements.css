@@ -16,8 +16,8 @@
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
-    line-height: 25.67px;
     text-align: left;
+    margin-top: -30px;
 }
 
 .host{
@@ -41,4 +41,32 @@
 .hostPic{
     border-radius: 50%;
     width: 100px;
+}
+
+.logementTags{
+    display: flex;
+    gap: 10px;
+}
+
+.logementTags p{
+    width: auto;
+    height: 25px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: white;
+    padding: 3px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.dropdownContainer{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 130px;
 }

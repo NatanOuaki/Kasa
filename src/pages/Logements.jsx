@@ -4,6 +4,9 @@ import { useParams } from 'react-router-dom';
 import data from '../data-logements.json';
 import ErrorPage from './ErrorPage';
 import Caroussel from '../components/Caroussel/Caroussel';
+import RatingStars from '../components/RatingStars/RatingStars';
+import Dropdown from '../components/Dropdown/Dropdown';
+
 
 
 const Logements = () => {
@@ -30,20 +33,17 @@ const Logements = () => {
           <p className='hostName'>{logement.host.name}</p>
           <img className='hostPic' src={logement.host.picture} alt={logement.host.name}/>
         </div>
-        <h3>Rating: {logement.rating}</h3>
+        <div className='logementTags'>
+          {logement.tags.map((tag, index) => (
+            <p key={index}>{tag}</p>
+          ))}
+        </div>
+        <RatingStars key={logement.id} logement = {logement}/>
       </div>
-      <h3>Equipments:</h3>
-      <ul>
-        {logement.equipments.map((equipment, index) => (
-          <li key={index}>{equipment}</li>
-        ))}
-      </ul>
-      <h3>Tags:</h3>
-      <ul>
-        {logement.tags.map((tag, index) => (
-          <li key={index}>{tag}</li>
-        ))}
-      </ul>
+      <div className='dropdownContainer'>
+        <Dropdown key={logement.id} content = {logement.description} type= {"Description"}/>
+        <Dropdown key={logement.id} content = {logement.equipments} type= {"Equipments"}/>
+      </div>
     </div>
   );
 };

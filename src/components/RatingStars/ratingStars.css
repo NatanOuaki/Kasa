@@ -1,0 +1,11 @@
+.logementRating{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: end;
+    margin-top: 20px;
+}
+.star{
+    width: 24px;
+    height: 24px;
+}

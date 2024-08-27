@@ -1,6 +1,5 @@
 .banner{
     position: relative;
-    background-image: url("../../assets/img/imageBanner.png");
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -14,7 +13,15 @@
     border-radius: 25px;
 }
 
-.overlay{
+.bannerHome{
+    background-image: url("../../assets/img/imageBannerHome.png");
+}
+
+.bannerAbout{
+    background-image: url("../../assets/img/imageBannerAbout.png");
+}
+
+.banner .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -24,7 +31,11 @@
     z-index: 1;
 }
 
-.banner h1{
+.bannerAbout .overlay{
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the color and opacity as needed */
+}
+
+.bannerHome h1{
     position: relative;
     z-index: 2;
     font-size: 48px;
@@ -32,4 +43,8 @@
     line-height: 68.45px;
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.bannerAbout h1{
+    display: none;
 }

@@ -4,7 +4,7 @@ import Gallery from "../components/Gallery/Gallery";
 function Home() {
   return (
     <>
-      <Banner/>
+      <Banner className = {'bannerHome'}/>
       <Gallery/>
     </>
   );

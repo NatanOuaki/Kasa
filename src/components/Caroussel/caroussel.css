@@ -28,3 +28,16 @@
 #caroussel .arrow_right {
 	right: 120px;
 }
+
+.caroussel-numeration {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25.67px;
+}
