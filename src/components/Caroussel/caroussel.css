@@ -21,6 +21,7 @@
 #caroussel .arrow {
 	position: absolute;
     height: 80px;
+	cursor: pointer;
 }
 #caroussel .arrow_left {
 	left: 120px;

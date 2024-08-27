@@ -14,12 +14,12 @@ const Logements = () => {
 
   const logement = data.find((item) => item.id === id);
   
-  let partsLocation = logement.location.split(" - ");
-  let location = partsLocation[1] + ", " + partsLocation[0];
-
   if (!logement) {
     return <ErrorPage />;
   }
+
+  let partsLocation = logement.location.split(" - ");
+  let location = partsLocation[1] + ", " + partsLocation[0];
 
   return (
     <div>

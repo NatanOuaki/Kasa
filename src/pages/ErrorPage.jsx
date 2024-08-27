@@ -7,7 +7,7 @@ function ErrorPage() {
         <div className="errorDiv">
             <h1 id="error404"> 404 </h1>
             <p id="errorOups">Oups! La page que vous demandez n'existe pas.</p>
-            <Link id="goBackLink"> <p>Retourner sur la page d’accueil </p></Link>
+            <Link id="goBackLink" to={`/`}> <p>Retourner sur la page d’accueil </p></Link>
         </div>
     </>
   );
