@@ -42,3 +42,21 @@
 	font-weight: 500;
 	line-height: 25.67px;
 }
+
+@media screen and (max-width: 767.98px) {
+	#caroussel {
+		min-height: 255px;
+	}
+	.caroussel-img{
+		height: 255px;
+	}
+	#caroussel .arrow {
+		height: 24px;
+	}
+	#caroussel .arrow_left {
+		left: 30px;
+	}
+	#caroussel .arrow_right {
+		right: 30px;
+	}
+}

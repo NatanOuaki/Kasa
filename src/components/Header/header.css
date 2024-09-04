@@ -6,7 +6,7 @@ header{
     align-items: center;
 }
 
-#logo{
+.logo{
     width: 211px;
     height: 68px;
 }
@@ -28,4 +28,27 @@ header{
     line-height: 34.22px;
     text-align: right;
     color: black;
+}
+
+@media screen and (max-width: 767.98px) {
+    header{
+        margin: 20px 20px 27px 20px;
+    }
+    
+    .logo{
+        width: 145px;
+        height: 47px;
+    }
+
+    .navLinks{
+        display: flex;
+        flex-direction: row;
+        margin-left: 43px;
+        gap: 26px;
+    }
+
+    .navLinks h3{
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 }

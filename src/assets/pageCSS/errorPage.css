@@ -25,3 +25,31 @@
 .errorDiv{
     margin-bottom: 110px;
 }
+
+
+
+@media screen and (max-width: 767.98px) {
+    .errorDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        margin-top: 173px;
+    }
+    #error404{
+        font-size: 96px;
+        line-height: 0px;
+    }
+    #errorOups{
+        font-size: 18px;
+        line-height: 25.67px;
+        width: 260px;
+        height: 52px;
+        margin-top: 0;
+    }
+    #goBackLink{
+        font-size: 14px;
+        line-height: 19.96px;
+    }
+}

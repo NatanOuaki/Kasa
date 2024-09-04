@@ -5,7 +5,7 @@ import data from '../data-logements.json';
 import ErrorPage from './ErrorPage';
 import Caroussel from '../components/Caroussel/Caroussel';
 import RatingStars from '../components/RatingStars/RatingStars';
-import Dropdown from '../components/Dropdown/Dropdown';
+import Collapse from '../components/Collapse/Collapse';
 
 
 
@@ -25,24 +25,28 @@ const Logements = () => {
     <div>
       <Caroussel key={logement.id} logement = {logement}/>
       <div className='container'>
-        <div>
-          <p className='logementTitle'>{logement.title}</p>
-          <p className='logementLocation'>{location}</p>
-        </div>  
-        <div className='host'>
-          <p className='hostName'>{logement.host.name}</p>
-          <img className='hostPic' src={logement.host.picture} alt={logement.host.name}/>
+        <div className='logementLeft'>
+          <div className='logementInfo'>
+            <p className='logementTitle'>{logement.title}</p>
+            <p className='logementLocation'>{location}</p>
+          </div>  
+          <div className='logementTags'>
+            {logement.tags.map((tag, index) => (
+              <p key={`${tag}-${index}`}>{tag}</p>
+            ))}
+          </div>
         </div>
-        <div className='logementTags'>
-          {logement.tags.map((tag, index) => (
-            <p key={index}>{tag}</p>
-          ))}
+        <div className='logementRight'>
+          <div className='host'>
+            <p className='hostName'>{logement.host.name}</p>
+            <img className='hostPic' src={logement.host.picture} alt={logement.host.name}/>
+          </div>
+          <RatingStars key={logement.id} numOfStars = {logement.rating}/>
         </div>
-        <RatingStars key={logement.id} logement = {logement}/>
       </div>
       <div className='dropdownContainer'>
-        <Dropdown key={logement.id} content = {logement.description} type= {"Description"}/>
-        <Dropdown key={logement.id} content = {logement.equipments} type= {"Equipments"}/>
+        <Collapse key={`description-${logement.id}`} content = {logement.description} type= {"Description"}/>
+        <Collapse key={`equipments-${logement.id}`} content = {logement.equipments} type= {"Equipments"}/>
       </div>
     </div>
   );

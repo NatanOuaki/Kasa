@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './dropdown.css';
+import './collapse.css';
 import arrow_up from '../../assets/img/arrow_up.png';
 import arrow_down from '../../assets/img/arrow_down.png';
 
-function Dropdown({ content, type }) {
+function Collapse({ content, type }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -33,4 +33,4 @@ function Dropdown({ content, type }) {
     );
 }
 
-export default Dropdown;
+export default Collapse;

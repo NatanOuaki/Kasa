@@ -5,6 +5,14 @@
     grid-template-columns: 80% 20%;
 }
 
+.logementLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-top: -25px;
+}
+
 .logementTitle{
     font-family: Montserrat;
     font-size: 36px;
@@ -18,6 +26,13 @@
     font-weight: 500;
     text-align: left;
     margin-top: -30px;
+}
+
+
+.logementRight{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .host{
@@ -36,7 +51,6 @@
     color: #FF6060;
     margin-right: 10px;
 }
-
 
 .hostPic{
     border-radius: 50%;
@@ -69,4 +83,74 @@
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 130px;
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .container{
+        margin: -10px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logementLeft{
+        margin-top: 0px;
+    }
+
+    .logementRight{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .logementTitle{
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+
+    .logementLocation{
+        font-size: 14px;
+        line-height: 19.96px;
+        margin-top: -15px;
+    }
+
+    .logementTags p{
+        height: 18px;
+        font-size: 10px;
+        padding: 1px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .host{
+        width: 135px;
+        height: 33px;
+        margin-top: -3px;
+        gap: 5px;
+    }
+
+    .hostName{
+        width: 93px;
+        font-size: 12px;
+        line-height: 17.11px;
+        text-align: right;
+    }
+
+    .hostPic{
+        border-radius: 50%;
+        width: 32px;
+    }
+
+    .dropdownContainer{
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }

@@ -1,7 +1,7 @@
 .gallery{
     padding: 56px 50px 56px 50px;
     background-color: #F6F6F6;
-    width: 1150px;
+    width: calc(100vw - 22%);
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -48,9 +48,27 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 106%;
+    width: 105%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
     border-radius: 10px;
     z-index: -1;
+}
+
+@media screen and (max-width: 767.98px) {
+    .gallery{
+        background-color: inherit;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 22px auto 0 auto;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .logementCard{
+        margin-left: auto;
+        width: 335px;
+        height: 255px;
+        margin-right: auto;
+    }
 }

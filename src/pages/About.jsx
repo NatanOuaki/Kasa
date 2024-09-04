@@ -1,6 +1,6 @@
 import '../assets/pageCSS/about.css';
 import Banner from "../components/Banner/Banner";
-import Dropdown from "../components/Dropdown/Dropdown";
+import Collapse from "../components/Collapse/Collapse";
 
 const aboutContent = [
 {
@@ -31,7 +31,7 @@ function About() {
       <Banner className = {'bannerAbout'}/>
       <div className="aboutDropdowns">
         {aboutContent.map((about) =>(
-                  <Dropdown key={about.title} type = {about.title} content={about.content}/>
+                  <Collapse key={about.title} type = {about.title} content={about.content}/>
               )
         )}
       </div>

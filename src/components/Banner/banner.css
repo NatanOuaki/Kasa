@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     text-align: center;
-    width: 1240px;
+    width: calc(100vw - 15%);
     height: 223px;
     display: flex;
     justify-content: center;
@@ -47,4 +47,19 @@
 
 .bannerAbout h1{
     display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+    .banner{
+        width: 335px;
+        height: 111px;
+    }
+    .bannerHome h1{
+        width: 225px;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: left;
+        top: 0px;
+        left: -33px;
+    }
 }
