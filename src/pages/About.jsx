@@ -27,7 +27,7 @@ const aboutContent = [
 
 function About() {
   return (
-    <>
+    <div className='aboutContainer'>
       <Banner className = {'bannerAbout'}/>
       <div className="aboutDropdowns">
         {aboutContent.map((about) =>(
@@ -35,7 +35,7 @@ function About() {
               )
         )}
       </div>
-    </>
+    </div>
   );
 }
 
