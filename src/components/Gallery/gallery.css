@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    overflow: hidden;
     margin: 43px auto 0 auto;
     border-radius: 25px;
 }
@@ -54,6 +53,21 @@
     border-radius: 10px;
     z-index: -1;
 }
+
+@media screen and (max-width: 1370px) {
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .gallery:has(.logementCard:nth-child(2)) {
+        justify-content: flex-start;
+    }
+}
+
+
 
 @media screen and (max-width: 767.98px) {
     .gallery{

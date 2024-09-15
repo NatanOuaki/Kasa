@@ -59,4 +59,8 @@
 	#caroussel .arrow_right {
 		right: 30px;
 	}
+
+	.caroussel-numeration{
+		display: none;
+	}
 }

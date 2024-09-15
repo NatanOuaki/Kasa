@@ -20,11 +20,13 @@ function Caroussel({ logement }) {
     return (
         <div id="caroussel">
             <img className="caroussel-img" src={slides[currentSlide]} alt="Caroussel Pictures" />
-            <img className="arrow arrow_left" src={arrow_left} alt="Arrow Left" onClick={() => updateImage(-1)} />
-            <img className="arrow arrow_right" src={arrow_right} alt="Arrow Right" onClick={() => updateImage(1)} />
-            <div className="caroussel-numeration">
-                {currentSlide + 1}/{slides.length}
-            </div>
+            {slides.length > 1 && (<>
+                <img className="arrow arrow_left" src={arrow_left} alt="Arrow Left" onClick={() => updateImage(-1)} />
+                <img className="arrow arrow_right" src={arrow_right} alt="Arrow Right" onClick={() => updateImage(1)} />
+                <div className="caroussel-numeration">
+                    {currentSlide + 1}/{slides.length}
+                </div>
+            </>)}
         </div>
     );
 }
