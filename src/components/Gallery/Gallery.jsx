@@ -5,7 +5,7 @@ import Card from '../Card/Card';
 
 
 
-function Gallery({}){
+function Gallery(){
     return(
         <div className="gallery">
             {data.map((logement) =>(
