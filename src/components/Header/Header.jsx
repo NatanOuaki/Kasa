@@ -16,7 +16,7 @@ function Header(){
                         textDecoration: isActive ? "underline" : "none"
                     })}
                 >
-                    <h3> Accueil</h3>
+                    <h3>Home</h3>
                 </NavLink>
                 <NavLink 
                     className="navLink" to={"/about"}
@@ -24,7 +24,7 @@ function Header(){
                         textDecoration: isActive ? "underline" : "none"
                     })}
                 >
-                    <h3>A propos</h3>
+                    <h3>About</h3>
                 </NavLink>
             </nav>
         </header>
