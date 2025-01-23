@@ -5,7 +5,7 @@ function Banner({className}){
     return(
         <div className={`banner ${className}`}>
             <div className="overlay"></div>
-            <h1>Chez vous, partout et ailleurs</h1>
+            <h1>At home, everywhere and elsewhere</h1>
         </div>
     );
 };
