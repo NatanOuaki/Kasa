@@ -3,26 +3,22 @@ import Banner from "../components/Banner/Banner";
 import Collapse from "../components/Collapse/Collapse";
 
 const aboutContent = [
-{
-  title: 'Fiabilité',
-  content:
-  'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.',
-},
-{
-  title: 'Respect',
-  content:
-  'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
-},
-{
-  title: 'Service',
-  content:
-  "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
-},
-{
-  title: 'Sécurité',
-  content:
-  "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
-},
+  {
+    "title": "Reliability",
+    "content": "The listings posted on Kasa guarantee total reliability. The photos match the accommodations, and all information is regularly verified by our teams."
+  },
+  {
+    "title": "Respect",
+    "content": "Kindness is one of Kasa's core values. Any discriminatory behavior or disturbance to the neighborhood will result in exclusion from our platform."
+  },
+  {
+    "title": "Service",
+    "content": "Our teams are at your disposal to provide a perfect experience. Do not hesitate to contact us if you have any questions."
+  },
+  {
+    "title": "Safety",
+    "content": "Safety is Kasa's top priority. For both hosts and travelers, each accommodation meets the safety standards established by our services. By leaving a rating for both the host and the guest, it allows our teams to ensure that the standards are being met. We also organize workshops on home safety for our hosts."
+  }
 ];
 
 function About() {
